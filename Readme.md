@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Дмитрий Быкин](https://up.htmlacademy.ru/adaptive/9/user/110698).
-* Наставник: `Неизвестно`.
+* Наставник: `Сергей Зубов`.
 
 ---
 
