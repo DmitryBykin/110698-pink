@@ -6,7 +6,130 @@
   </head>
   <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+    <header class="header">
+      <nav class="nav">
+        <a class="nav__logo">  <!-- href на главной странице не указываем -->
+          <img  src="logo.jpg" alt="main logo">
+        </a>
+        <a class="nav-btn  nav-btn--close"></a>
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="index.html">Главная</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="photo.html">Фотографии</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="competition.html">Конкурс</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="htmlacademy.ru">Html academy</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="download">
+      <a class="download__btn">Скачать приложение</a>
+      <figure class="download__icons">
+        <img class="download__icon-mac" src="url" alt="icon">
+        <img class="download__icon-android" src="url" alt="icon">
+        <img class="download__icon-windows" src="url" alt="icon">
+        <figcaption class="download__desc">
+            Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+        </figcaption>
+      </figure>
+    </div> <!-- end download -->
+
+    <section class="features">
+      <div class="features-header">
+        <p class="features-header__text">Устали от серости мегаполиса?</p>
+        <p class="features-header__text">Нам есть, что вам предложить!</p>
+      </div>
+
+      <div class="features-main">
+        <h2 class="features-main__title">Поднимает настроение</h2>
+        <p class="features-main__desc">
+          Приложение позволяет вам победить осеннюю хандру и депрессию
+          буквально в несколько кликов!
+        </p>
+
+        <h2 class="features-main__title">Меняет мир вокруг</h2>
+        <p class="features-main__desc">
+          Сделайте снимок и украсьте егосмайликом или текстовой подписью, чтобы
+          усилить эффект
+        </p>
+
+        <h2 class="features-main__title">Заводит новых друзей</h2>
+        <p class="features-main__desc">
+          Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и
+          заводите новых
+        </p>
+        <img class="features-main__logo" src="url" alt="features logo">
+      </div> <!-- end features-main -->
+
+    </section> <!-- end features -->
+
+    <div class="feedback-slider">
+      <section class="feedback-slider__slide">
+        <h2 class="feedback-slider__title">Николай Петров</h2>
+        <p class="feedback-slider__desc">
+          Это приложение перевернуло мой мир ...
+        </p>
+      </section>
+      <div class="feedback-slider__controls">
+      </div>
+    </div> <!-- end feedback-sliders -->
+
+    <div class="price-slider">
+      <section class="price-slider__items">  <!-- здесь будет таблица -->
+        <div class="price-slider__header price-slider--hit">
+          <h2 class="price-slider__name">
+            стандарт
+          </h2>
+          <p class="price-slider__cy">
+            3,99 USD
+          </p>
+        </div>
+        <ul class="price-slider__list">
+          <li class="price-slider__item icons-yes">
+            Розовый фильтр
+          </li>
+          <li class="price-slider__item icons-yes">
+            Смайлики
+          </li>
+          <li class="price-slider__item icons-no">
+            Комментарии
+          </li>
+        </ul>
+      </section>
+
+      <div class="price-slider__controls">
+      </div>
+    </div> <!-- end price-slider -->
+
+    <footer class="index-footer">
+      <p class="index-footer__text">
+        Остались вопросы? Свяжитесь с нами!
+      </p>
+      <p class="index-footer__title">
+        Звоните:
+      </p>
+      <a href="tel:+78125556666" class="index-footer__call">+7(812)555-66-66</a>
+      <p class="index-footer__title">
+        Пишите:
+      </p>
+      <a href="mailto:mail@htmlacademy.ru" class="index-footer__email">mail@htmlacademy.ru</a>
+      <p class="index-footer__title">
+        Приезжайте в гости:
+      </p>
+      <address class="index-footer__address">
+        ул. Большая Конюшенная, д. 19/8
+      </address>
+
+      <img class="index-footer__map" src="url" alt="Map">
+
+    </footer> <!-- end index-footer -->
 
   </body>
 </html>
