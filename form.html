@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+  </head>
+  <body>
+
+    <header class="header">
+      <nav class="nav">
+        <a class="nav__logo" href="index.html">
+          <img class="nav__img" src="logo.jpg" alt="main logo">
+        </a>
+        <a class="nav-btn  nav-btn--close"></a>
+        <ul class="nav__items">
+          <li class="nav__item">
+            <a class="nav__link" href="index.html">Главная</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="photo.html">Фотографии</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="competition.html">Конкурс</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="htmlacademy.ru">Html academy</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__desc">
+        Конкурс на самое безбашенное путешествие с Пинк
+      </div>
+    </header>
+
+    <form class="form" action="/form_script" method="post">
+      <div class="form__user">
+        <p class="form__title">Поделитесь своей историей и получите шанс
+        выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
+
+        <label class="form__text-item">Фамилия:  <!-- подписи для текстовых полей и textarea -->
+          <input class="form__field-text" type="text" id="surname" placeholder="Укажите фамилию*">
+        </label>
+        <label class="form__text-item">Имя:
+          <input class="form__field-text" type="text" id="name" placeholder="Введите ваше имя*">
+        </label>
+        <label class="form__text-item">Отчество:
+          <input class="form__field-text" type="text" id="last-name" placeholder="Ну и отчество тоже">
+        </label>
+      </div> <!-- end form__user -->
+
+      <div class="form__check">
+        <p class="form__check-title"> <!-- заголовок для блока checkbox -->
+          Ваши безбашенные достижения в путешествии
+        </p>
+        <label class="form__check-item">    <!-- подписи для checkbox`ов -->
+          <!-- achievements = достижения -->
+          <input type="checkbox" id="shark" name="achiev" value="shark" checked>
+          <span class="form__check-ind"></span> <!-- checkbox-indicator -->
+          Сделал селфи с акулой
+        </label>
+        <label class="form__check-item">
+          <input type="checkbox" id="beach" name="achiev" value="beach" checked>
+          <span class="form__check-ind"></span>
+          Обгорел на пляже
+        </label>
+        <label class="form__check-item">
+          <input type="checkbox" id="chack" name="achiev" value="chack">
+          <span class="form__check-ind"></span>
+          Видел Чака Норриса
+        </label>
+        <label class="form__check-item">
+          <input type="checkbox" id="souvenir" name="achiev" value="souvenir">
+          <span class="form__check-ind"></span>
+          Накупил сувениров
+        </label>
+        <label class="form__check-item">
+          <input type="checkbox" id="tower" name="achiev" value="tower" checked>
+          <span class="form__check-ind"></span>
+          Удержал башню
+        </label>
+        <label class="form__check-item">
+          <input type="checkbox" id="hotel" name="achiev" value="hotel">
+          <span class="form__check-ind"></span>
+          Разгромил отель
+        </label>
+
+      </div> <!-- end form__check -->
+
+      <div class="form__feedback">
+        <!-- все текстовые поля выглядят одинаково -->
+        <!-- поэтому тут тоже form__field-text -->
+        <label class="form__text-item">Номер телефона:
+          <input class="form__field-text" type="tel" id="tel" placeholder="Номер, пожалуйста">
+        </label>
+        <label class="form__text-item">Адрес почты:
+          <input class="form__field-text" type="email" id="email" placeholder="Введите почту*">
+        </label>
+      </div> <!-- end form__feedback -->
+
+      <div class="form__radio">
+        <p class="form__radio-title">
+          С каким приложением путешествовали?
+        </p>
+        <label class="form__radio-item">    <!-- подписи для radio полей -->
+          <input type="radio" id="ios" name="platform" value="ios" checked>
+          <span class="form__radio-ind"></span> <!-- radio-indicator -->
+          Pink для iOS
+        </label>
+        <label class="form__radio-item">
+          <input type="radio" id="android" name="platform" value="android">
+          <span class="form__radio-ind"></span>
+          Pink для Android
+        </label>
+        <label class="form__radio-item">
+          <input type="radio" id="windows" name="platform" value="windows">
+          <span class="form__radio-ind"></span>
+          Windows Phone
+        </label>
+      </div> <!-- end form__radio -->
+
+      <p class="form__text-title">
+        Опишите свои эмоции
+      </p>
+      <textarea class="form__emotions" name="emotions" rows=6 cols=25
+      placeholder="Можно прям в красках, не стесняясь в выражениях">
+      </textarea>
+
+      <input class="form_submit" type="submit" value="Отправить форму">
+      <p class="form_required"><span>*</span>-Обязательные поля</p>
+    </form>
+
+    <footer class="footer">
+      <img class="footer__logo" src="index.html" alt="footer logo">
+      <ul class="footer__list">
+        <li class="footer__item">
+          <a class="footer__social  footer__social--tw" href="twitter.com">tw</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__social  footer__social--fb" href="fb.com">fb</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__social  footer__social--yt" href="youtube.com">yt</a>
+        </li>
+      </ul>
+      <!-- не знаю правильно или нет Разработано+Логотип делаем ссылкой, так видимо будет легче
+      попасть на мобильнике-->
+      <a class="footer__link" href="htmlacademy.html">
+        <p class="footer__text">Разработано</p>
+        <img class="footer__img" src="url" alt="htmlacademy logo">
+      </a>
+    </footer>
+
+  </body>
+</html>
