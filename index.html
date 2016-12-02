@@ -10,11 +10,13 @@
 
     <header class="header">
       <nav class="nav">
-        <a class="nav__logo">  <!-- href на главной странице не указываем -->
-          <img class="nav__img" src="logo.jpg" alt="main logo">
-        </a>
-        <a class="nav-btn  nav-btn--close"></a>
-        <ul class="nav__items">
+        <div class="nav__menu">
+          <a class="nav__logo">  <!-- href на главной странице не указываем -->
+            <img class="nav__img" src="logo.jpg" alt="PINK logo">
+          </a>
+          <a class="nav-btn  nav-btn--close"></a>
+        </div>
+        <ul class="nav__items hidden"> <!-- пока убираем -->
           <li class="nav__item">
             <a class="nav__link" href="index.html">Главная</a>
           </li>
@@ -32,7 +34,7 @@
     </header>
 
     <div class="download">
-      <a class="download__btn">Скачать приложение</a>
+      <a class="download__btn" href="url">Скачать приложение</a>
       <figure class="download__icons">
         <img class="download__icon-mac" src="url" alt="icon">
         <img class="download__icon-android" src="url" alt="icon">
@@ -44,39 +46,41 @@
     </div> <!-- end download -->
 
     <section class="features">
-      <div class="features-header">
-        <p class="features-header__text">Устали от серости мегаполиса?</p>
-        <p class="features-header__text">Нам есть, что вам предложить!</p>
+      <div class="features__header">
+        <p class="features__header-text">Устали от серости мегаполиса?</p>
+        <p class="features__header-text">Нам есть, что вам предложить!</p>
       </div>
 
-      <div class="features-main">
-        <h2 class="features-main__title">Поднимает настроение</h2>
-        <p class="features-main__desc">
+      <div class="features__main">
+        <h2 class="features__main-title">Поднимает настроение</h2>
+        <p class="features__main-desc">
           Приложение позволяет вам победить осеннюю хандру и депрессию
           буквально в несколько кликов!
         </p>
 
-        <h2 class="features-main__title">Меняет мир вокруг</h2>
-        <p class="features-main__desc">
+        <h2 class="features__main-title">Меняет мир вокруг</h2>
+        <p class="features__main-desc">
           Сделайте снимок и украсьте егосмайликом или текстовой подписью, чтобы
           усилить эффект
         </p>
 
-        <h2 class="features-main__title">Заводит новых друзей</h2>
-        <p class="features-main__desc">
+        <h2 class="features__main-title">Заводит новых друзей</h2>
+        <p class="features__main-desc">
           Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и
           заводите новых
         </p>
-        <img class="features-main__logo" src="url" alt="features logo">
+        <img class="features__main-logo" src="../../img/iphone-screen-mobile@1x.png" width=157 height=320 alt="features logo">
       </div> <!-- end features-main -->
 
     </section> <!-- end features -->
 
     <div class="feedback-slider">
-      <section class="feedback-slider__slide">
+      <section class="feedback-slider__item">
         <h2 class="feedback-slider__title">Николай Петров</h2>
         <p class="feedback-slider__desc">
-          Это приложение перевернуло мой мир ...
+          Это приложение перевернуло мой мир и позволило по-новому взглянуть
+          на привычные серые вещи! А еще я познакомился со своей будущей женой в
+          комментариях к выложенной фотографии!
         </p>
       </section>
       <div class="feedback-slider__controls">
