@@ -3,5 +3,16 @@
   background-color: @header-bg;
   background:
     url("../../img/bg-back-mobile@1x.jpg") 50% 0% no-repeat,
-    url("../../img/iphone-hand-mobile@1x.png") left bottom no-repeat;
+    url("../../img/iphone-hand-mobile@1x.png") left bottom no-repeat; // это изображение пока не показывается
+}
+.header__desc {
+  .set-wrap();
+  .set-font(24px, 32px, light);
+  padding-top: 35px;
+}
+.header--form,
+.header--photo {             // для form.html и photo.html высота header 235px
+  height: 235px;             // и только одна фоновая фотография
+  background: url("../../img/bg-back-mobile@1x.jpg") 50% 0% no-repeat;
+
 }
