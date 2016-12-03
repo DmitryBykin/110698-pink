@@ -1,0 +1,24 @@
+.download {
+  min-height: 210px; // 270 = 210 + 30 + 30
+
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  background-color: @header-bg;
+}
+
+.download__btn {
+  display: block;
+  width: 250px;
+
+  .set-font(@btn-font-size, @btn-line-height, bold, @btn-color);
+
+  padding: 15px 20px;
+  margin: 0 auto;
+
+  border: 3px solid @btn-color;
+  border-radius: 30px;
+}
+.download__desc {
+  .set-font(14px, 24px, light, #ffffff);
+}

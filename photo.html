@@ -3,16 +3,20 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
-    <header class="header">
+    <header class="header header--photo">
       <nav class="nav">
-        <a class="nav__logo" href="index.html">
-          <img class="nav__img" src="logo.jpg" alt="main logo">
-        </a>
-        <a class="nav-btn  nav-btn--close"></a>
-        <ul class="nav__items">
+        <div class="nav__menu">
+          <a class="nav__logo" href="index.html">
+            <img class="nav__img" src="logo.jpg" alt="PINK logo">
+          </a>
+          <a class="nav-btn  nav-btn--close"></a>
+        </div>
+        <ul class="nav__items nav__items--hidden">
           <li class="nav__item">
             <a class="nav__link" href="index.html">Главная</a>
           </li>
@@ -39,37 +43,39 @@
       </h2>
 
       <ul class="photos__items">
+        <img class="photos__img  photos--day-view" src="url" alt="Панорама дня">
+        <div class="photos__wrapper">
+          <li class="photos__item">
+              <p class="photos__username">
+                Анна <span class="photos__time">(5 минут назад)</span>
+              </p>
+              <p class="photos__desc">
+                Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую
+                трансляцию в перископе, задавайте свои вопросы!
+              </p>
+              <div class="photos__likes">
+                <img class="photos__like-img" src="url" alt="likes">
+                <span class="photos__likes-text">Нравится: 215</span>
+              </div>
+          </li>
 
-        <li class="photos__item">
-          <img class="photos__img photos--day-view" src="url" alt="Панорама дня">
-          <p class="photos__username">
-            Анна <span class="photos__time">(5 минут назад)</span>
-          </p>
-          <p class="photos__desc">
-            Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую
-            трансляцию в перископе, задавайте свои вопросы!
-          </p>
-          <div class="photos__likes">
-            <img class="photos__like-img" src="url" alt="likes">
-            <span class="photos__likes-text">Нравиться: 215</span>
-          </div>
-        </li>
 
-        <li class="photos__item">
-          <img class="photos__img" src="url" alt="фото">
-          <p class="photos__username">
-            Левон <span class="photos__time">(5 часов назад)</span>
-          </p>
-          <p class="photos__desc">
-            Вчера он на луну летал, сегодня в руки к нам попал
-          </p>
-          <div class="photos__likes">
-            <img class="photos__like-img" src="url" alt="likes">
-            <span class="photos__likes-text">Нравиться: 356</span>
-          </div>
-        </li>
+          <li class="photos__item">
+              <img class="photos__img" src="url" alt="фото">
+              <p class="photos__username">
+                Левон <span class="photos__time">(5 часов назад)</span>
+              </p>
+              <p class="photos__desc">
+                Вчера он на луну летал, сегодня в руки к нам попал
+              </p>
+              <div class="photos__likes">
+                <img class="photos__like-img" src="url" alt="likes">
+                <span class="photos__likes-text">Нравится: 356</span>
+              </div>
+          </li>
 
-        <!-- здесь будут остальные записи -->
+          <!-- здесь будут остальные записи -->
+        </div> <!-- end photos__wrapper -->
 
       </ul> <!-- end photos__items -->
     </section> <!-- end photos -->
@@ -80,52 +86,56 @@
       </h2>
       <!-- здесь,видимо, форма для загрузки фотографий -->
       <form class="upload__form" action="/script" method="post">
-        <img class="ipload__photo" src="url" alt="загруженное фото">
-        <div class="upload__filters">
-          <!-- как эти штуки (фильтры) сделать пока не знаю, надеюсь потом
-          покажут как правильно сделать-->
-          <ul class="upload__items">
-            <li class="upload__item">
-              <img class="upload__filter-1  upload--active" src="url" alt="filter-1">
-            </li>
-          </ul>
-          <ul class="upload__items">
-            <li class="upload__item">
-              <img class="upload__filter-2" src="url" alt="filter-2">
-            </li>
-          </ul>
-          <ul class="upload__items">
-            <li class="upload__item">
-              <img class="upload__filter-3" src="url" alt="filter-3">
-            </li>
-          </ul>
-          <!--  фильтры -->
-          <input class="upload__range" type="range">
-        </div> <!-- end upload__filters -->
-        <input class="upload__submit" type="submit" value="Запостить">
-        <input class="upload__reset" type="reset" value="Отмена">
+        <div class="upload__wrapper">
+          <img class="ipload__photo" src="url" alt="загруженное фото">
+          <div class="upload__filters">
+            <!-- как эти штуки (фильтры) сделать пока не знаю, надеюсь потом
+            покажут как правильно сделать-->
+            <ul class="upload__items">
+              <li class="upload__item">
+                <img class="upload__filter-1  upload--active" src="url" alt="filter-1">
+              </li>
+            </ul>
+            <ul class="upload__items">
+              <li class="upload__item">
+                <img class="upload__filter-2" src="url" alt="filter-2">
+              </li>
+            </ul>
+            <ul class="upload__items">
+              <li class="upload__item">
+                <img class="upload__filter-3" src="url" alt="filter-3">
+              </li>
+            </ul>
+            <!--  фильтры -->
+            <input class="upload__range" type="range">
+          </div> <!-- end upload__filters -->
+          <input class="upload__btn  upload__btn--active" type="submit" value="Запостить">
+          <input class="upload__btn" type="reset" value="Отмена">
+        </div>
       </form>
     </section> <!-- end upload -->
 
     <footer class="footer">
-      <img class="footer__logo" src="index.html" alt="footer logo">
-      <ul class="footer__list">
-        <li class="footer__item">
-          <a class="footer__social  footer__social--tw" href="www.twitter.com">tw</a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__social  footer__social--fb" href="www.fb.com">fb</a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__social  footer__social--yt" href="www.youtube.com">yt</a>
-        </li>
-      </ul>
-      <!-- не знаю правильно или нет Разработано+Логотип делаем ссылкой, так видимо будет легче
-      попасть на мобильнике-->
-      <a class="footer__link" href="htmlacademy.html">
-        <p class="footer__text">Разработано</p>
-        <img class="footer__img" src="url" alt="htmlacademy logo">
-      </a>
+      <div class="footer__wrapper">
+        <img class="footer__logo" src="index.html" alt="footer logo">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__social  footer__social--tw" href="twitter.com">tw</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__social  footer__social--fb" href="fb.com">fb</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__social  footer__social--yt" href="youtube.com">yt</a>
+          </li>
+        </ul>
+        <!-- не знаю правильно или нет Разработано+Логотип делаем ссылкой, так видимо будет легче
+        попасть на мобильнике-->
+        <a class="footer__link" href="htmlacademy.html">
+          <p class="footer__text">Разработано</p>
+          <img class="footer__img" src="url" alt="htmlacademy logo">
+        </a>
+      </div> <!-- end footer__wrapper -->
     </footer>
 
   </body>

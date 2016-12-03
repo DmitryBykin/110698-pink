@@ -1,0 +1,29 @@
+.nav {
+  border-bottom: 1px solid @inner-shadow; // тень
+}
+.nav__menu {
+  height: 67px;
+  border-bottom: 1px solid @drop-shadow; // тень
+}
+.nav__item {
+  border-top: 1px solid @inner-shadow;
+  border-bottom: 1px solid @drop-shadow;
+}
+
+.nav__link {
+  display: block;
+
+  .set-font(@link-font-size, @link-line-height, bold, @link-color);
+
+  padding-top: 22px;
+  padding-bottom: 22px;
+
+  &:active {
+    color: @link-active-color;
+    opacity: 0.3;
+  }
+}
+
+.nav__items--hidden {
+  display: none;
+}

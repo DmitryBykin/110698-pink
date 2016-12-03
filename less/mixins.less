@@ -1,0 +1,45 @@
+.set-font(@font-size: 18px, @line-size: 22px, @weight: "bold", @color: #ffffff, @align: center){
+  font-family : 'Open Sans', Arial, sans-serif;
+  font-weight: @weight;
+  font-size: @font-size;
+  line-height: @line-size;
+  color: @color;
+
+  text-align: @align;
+}
+
+.set-wrap(@left: 20px, @right: 20px) { // установка левых и правых отступов у блоков
+  padding-left: @left;
+  padding-right: @right;
+}
+
+.corner(@_, @height, @length, @color) {
+  position: absolute;
+  z-index: 1;
+  content: "уголок фикс ширина";
+
+  width: 0;
+  height: 0;
+}
+.corner(topleft, @height, @length, @color) {
+  bottom: -@height;
+  border-top: @height solid @color;
+  border-right: @length solid transparent;
+}
+
+.triangle(@_, @height, @width, @color){
+  position: absolute;
+  z-index: 1;
+  content: "треугольник фикс ширина";
+
+  width: 0;
+  height: 0;
+}
+.triangle(down, @height, @width, @color){
+  left: 0;
+  bottom: -@height;
+
+  border-left: @width/2 solid transparent;
+	border-right: @width/2 solid transparent;
+	border-top: @height solid @color;
+}
