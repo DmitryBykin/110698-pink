@@ -1,0 +1,97 @@
+.form__title {
+  .set-font(14px, 30px, normal, @form-color);
+}
+.form__text-item {
+  display: block;
+  .set-font(14px, 30px, normal, @form-title-color, left);
+  text-transform: uppercase;
+
+  padding-left: 20px;
+}
+.form__field-text {
+  width: 100%;
+  .set-font(18px, 30px, normal, @form-color, left);
+
+  padding: 20px;
+  margin-bottom: 15px;
+
+  box-sizing: border-box;
+}
+.form__check {
+  background-color: @form-bg;
+}
+.form__check-title {
+  .set-font(14px, 18px, normal, @form-title-color, center);
+  text-transform: uppercase;
+
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+.form__check-item {
+  display: block;
+  .set-font(18px, 30px, normal, @form-color, left);
+
+  padding-left: 70px;
+  padding-bottom: 40px;
+}
+.form__feedback {
+  padding-top: 40px;
+}
+.form__radio {
+  .set-wrap();
+  background-color: @form-bg;
+}
+.form__radio-title {
+  .set-font(14px, 18px, normal, @form-title-color, center);
+  text-transform: uppercase;
+
+  padding-top: 40px;
+  padding-bottom: 35px;
+}
+.form__radio-item {
+  display: block;
+  .set-font(18px, 30px, normal, @form-color, left);
+  padding-left: 70px;
+  padding-bottom: 40px;
+}
+.form__text-title {
+  .set-font(14px, 30px, normal, @form-title-color, center);
+  text-transform: uppercase;
+}
+.form__emotions {
+  width: 100%;
+
+  padding: 10px;
+
+  box-sizing: border-box;
+}
+.form__wrapper {
+  .set-wrap();  // добавляет слева и справа padding по умолчанию 20px
+
+  text-align: center;
+}
+.form__submit {
+  width: 100%;
+  max-width: 300px;
+
+  .set-font(18px, 30px, bold, #ffffff, center);
+  text-transform: uppercase;
+
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-top: 50px;
+  margin-bottom: 25px;
+
+  background-color: #2aab6d;
+  border: none;
+  border-radius: 1px;
+
+  box-sizing: border-box;
+}
+.form__required {
+  .set-font(14px, 30px, normal, @form-color, center);
+  text-transform: uppercase;
+}
+.form__required span {
+  color: @form-title-color;
+}
