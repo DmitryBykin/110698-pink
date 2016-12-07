@@ -22,7 +22,8 @@
   height: 0;
 }
 .corner(topleft, @height, @length, @color) {
-  bottom: -@height;
+  //bottom: -@height;
+  top: 0;
   border-top: @height solid @color;
   border-right: @length solid transparent;
 }
@@ -42,4 +43,11 @@
   border-left: @width/2 solid transparent;
 	border-right: @width/2 solid transparent;
 	border-top: @height solid @color;
+}
+.set-clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 }

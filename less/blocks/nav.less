@@ -1,10 +1,21 @@
 .nav {
   border-bottom: 1px solid @inner-shadow; // тень
+  background-color: @menu-bg;
+
+  display: flex;
+  flex-direction: column;
 }
+
 .nav__menu {
   height: 67px;
   border-bottom: 1px solid @drop-shadow; // тень
 }
+
+.nav__items {
+  display: flex;
+  flex-direction: column;
+}
+
 .nav__item {
   border-top: 1px solid @inner-shadow;
   border-bottom: 1px solid @drop-shadow;
@@ -26,4 +37,21 @@
 
 .nav__items--hidden {
   display: none;
+}
+
+@media @desktops {
+  .nav__menu {
+    width: 160px;
+  }
+  .nav {
+    flex-direction: row;
+
+    border: 1px solid red;
+  }
+  .nav,
+  .nav__items {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-grow: 1;
+  }
 }

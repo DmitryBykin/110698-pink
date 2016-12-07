@@ -1,9 +1,9 @@
 .header {
-  height: 460px;
+  min-height: 720px; // 460px когда меню закрыто
   background-color: @header-bg;
   background:
-    url("../../img/bg-back-mobile@1x.jpg") 50% 0% no-repeat,
-    url("../../img/iphone-hand-mobile@1x.png") left bottom no-repeat; // это изображение пока не показывается
+    url("../../img/bg-back-mobile@1x.jpg") 50% 100% no-repeat,
+    url("../../img/iphone-hand-mobile@1x.png") 50% 100% no-repeat; // это изображение пока не показывается
 }
 .header__desc {
   .set-wrap();
@@ -14,5 +14,11 @@
 .header--photo {             // для form.html и photo.html высота header 235px
   height: 235px;             // и только одна фоновая фотография
   background: url("../../img/bg-back-mobile@1x.jpg") 50% 0% no-repeat;
+}
 
+@media @tablets {
+  .header {
+    min-height: 980px; // меню постоянно открыто
+    background-size: cover;
+  }
 }

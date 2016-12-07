@@ -1,0 +1,36 @@
+.effects {
+  display: none;
+}
+
+@media @tablets {
+  .effects {
+    position: relative;
+    z-index: 1;
+
+    display: flex;
+
+    margin-top: -60px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    .set-wrap(40px, 40px);
+
+    background-color: #ffffff;
+
+    display: block;
+  }
+  .effects__wrapper {
+    display: flex;
+  }
+  .effects__logo {
+    width: 50%;
+  }
+  .effects__content {
+    width: 50%;
+  }
+}
+
+@media @desktops {
+  .effects {
+    margin-top: 0;
+  }
+}

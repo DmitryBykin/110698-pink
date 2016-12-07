@@ -1,4 +1,37 @@
 .footer__wrapper {
   .set-wrap();
   text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__item {
+  display: inline-block;
+  vertical-align: top;
+}
+.footer__logo,
+.footer__list,
+.footer__link {
+  border: 1px solid red;
+}
+
+@media @mobiles {
+  .footer {
+    &--index {
+      display: none;
+    }
+  }
+
+}
+@media @tablets {
+  .footer {
+    display: block;
+  }
+  .footer__wrapper {
+    .set-wrap(40px, 40px);
+    //text-align: left;
+
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
