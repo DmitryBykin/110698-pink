@@ -10,13 +10,13 @@
 
     <header class="header">
       <nav class="nav">
-        <div class="nav__menu">
+        <div class="nav__menu"> <!-- nav__menu--closed -->
           <a class="nav__logo">  <!-- href на главной странице не указываем -->
             <img class="nav__img" src="logo.jpg" alt="PINK logo">
           </a>
           <a class="nav-btn  nav-btn--close"></a>
         </div>
-        <ul class="nav__items nav__items--hidden"> <!-- пока убираем -->
+        <ul class="nav__items"> <!-- nav__items--hidden -- спрятать меню -->
           <li class="nav__item">
             <a class="nav__link" href="index.html">Главная</a>
           </li>
@@ -24,16 +24,20 @@
             <a class="nav__link" href="photo.html">Фотографии</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="competition.html">Конкурс</a>
+            <a class="nav__link" href="form.html">Конкурс</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="http://www.htmlacademy.ru">Html academy</a>
+            <a class="nav__link" href="http://www.htmlacademy.ru">HTML academy</a>
           </li>
         </ul>
       </nav>
+
     </header>
 
     <div class="download">
+      <p class="download__title"> <!-- в мобильной версии прячем -->
+        Взгляните <br>на жизнь<br>иначе!
+      </p>
       <a class="download__btn" href="url">Скачать приложение</a>
       <figure class="download__icons">
         <img class="download__icon-mac" src="url" alt="icon">
@@ -47,37 +51,82 @@
 
     <section class="features">
       <div class="features__header">
-        <div class="features__wrapper">
+        <div class="features__header-wrapper">
           <p class="features__header-text">Устали от серости мегаполиса?</p>
-          <p class="features__header-text">Нам есть, что вам предложить!</p>
+          <p class="features__header-text">Нам есть, что вам <br>предложить!</p>
         </div>
       </div>
 
       <div class="features__main">
         <div class="features__wrapper">
-          <h2 class="features__main-title">Поднимает настроение</h2>
-          <p class="features__main-desc">
-            Приложение позволяет вам победить осеннюю хандру и депрессию
-            буквально в несколько кликов!
-          </p>
+          <section class="features__block">
 
-          <h2 class="features__main-title">Меняет мир вокруг</h2>
-          <p class="features__main-desc">
-            Сделайте снимок и украсьте егосмайликом или текстовой подписью, чтобы
-            усилить эффект
-          </p>
+            <div class="features__item">
+              <h2 class="features__main-title">Поднимает настроение</h2>
+              <p class="features__main-desc">
+                Приложение позволяет вам победить осеннюю хандру и депрессию
+                буквально в несколько кликов!
+              </p>
+            </div>
 
-          <h2 class="features__main-title">Заводит новых друзей</h2>
-          <p class="features__main-desc">
-            Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и
-            заводите новых
-          </p>
-          <img class="features__main-logo" src="../../img/iphone-screen-mobile@1x.png" width=157 height=320 alt="features logo">
+            <div class="features__item">
+              <h2 class="features__main-title">Меняет мир вокруг</h2>
+              <p class="features__main-desc">
+                Сделайте снимок и украсьте егосмайликом или текстовой подписью, чтобы
+                усилить эффект
+              </p>
+            </div>
+
+            <div class="features__item">
+              <h2 class="features__main-title">Заводит новых друзей</h2>
+              <p class="features__main-desc">
+                Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и
+                заводите новых
+              </p>
+            </div>
+
+          </section>
+
+          <div class="features__main-logoblock">
+
+            <div class="features__main-logo">
+            </div>
+
+            <div class="features__main-logo">
+            </div>
+
+            <div class="features__main-logo">
+            </div>
+
+          </div>
+
+          <!--<img class="features__main-logo" src="../../img/iphone-screen-mobile@1x.png" width=157 height=320 alt="features logo">
+          -->
         </div>
 
       </div> <!-- end features-main -->
 
     </section> <!-- end features -->
+
+    <section class="effects">
+      <div class="effects__wrapper">
+        <div class="effects__logo"> LOGO
+        </div>
+        <div class="effects__content">
+          <h2 class="effetcs__title">Эффект <br>на 24 часа</h2>
+          <p class="effects__desc">
+            Британские ученые провели исследования
+            и доказали, что положительный эффект
+            от использования приложения длится
+            целые сутки!
+          </p>
+          <a class="effects__learn-more" href="more.html">
+            Узнать больше об исследовании
+          </a>
+        </div>
+      </div>
+
+    </section>
 
     <div class="feedback-slider">
       <div class="feedback__wrapper">
@@ -121,33 +170,71 @@
       </div>
     </div> <!-- end price-slider -->
 
-    <footer class="index-footer">
-      <div class="index-footer__wrapper">
-        <p class="index-footer__text">
+    <div class="callback">
+      <div class="callback__wrapper">
+        <p class="callback__text">
           Остались вопросы?
         </p>
-        <p class="index-footer__text">
+        <p class="callback__text">
           Свяжитесь с нами!
         </p>
-        <p class="index-footer__title">
-          Звоните:
-        </p>
-        <a href="tel:+78125556666" class="index-footer__call">+7(812)555-66-66</a>
-        <p class="index-footer__title">
-          Пишите:
-        </p>
-        <a href="mailto:mail@htmlacademy.ru" class="index-footer__email">mail@htmlacademy.ru</a>
-        <p class="index-footer__title">
-          Приезжайте в гости:
-        </p>
-        <address class="index-footer__address">
-          ул. Большая Конюшенная, д. 19/8
-        </address>
-      </div> <!-- index-footer__wrapper -->
+
+        <div class="callback__items">
+
+          <div class="callback__item">
+            <p class="callback__title">
+              Звоните:
+            </p>
+            <a href="tel:+78125556666" class="callback__call">+7(812)555-66-66</a>
+          </div>
+
+          <div class="callback__item">
+            <p class="callback__title">
+              Пишите:
+            </p>
+            <a href="mailto:mail@htmlacademy.ru" class="callback__email">mail@htmlacademy.ru</a>
+          </div>
+
+          <div class="callback__item">
+            <p class="callback__title">
+              Приезжайте в гости:
+            </p>
+            <address class="callback__address">
+              ул. Большая Конюшенная, д. 19/8
+            </address>
+          </div>
+
+        </div>
+
+      </div> <!-- callback__wrapper -->
       <!-- добавить треугольник -->
-      <div class="index-footer__map">
+      <div class="callback__map">
       </div>
-    </footer> <!-- end index-footer -->
+    </div>
+
+    <footer class="footer footer--index">
+        <div class="footer__wrapper">
+          <img class="footer__logo" src="index.html" alt="footer logo">
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__social  footer__social--tw" href="twitter.com">tw</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__social  footer__social--fb" href="fb.com">fb</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__social  footer__social--yt" href="youtube.com">yt</a>
+            </li>
+          </ul>
+
+          <a class="footer__link" href="htmlacademy.html">
+            <p class="footer__text">Разработано</p>
+            <img class="footer__img" src="url" alt="htmlacademy logo">
+          </a>
+        </div> <!-- end footer__wrapper -->
+      </div>
+
+    </footer> <!-- end footer -->
 
   </body>
 </html>

@@ -22,3 +22,21 @@
 .download__desc {
   .set-font(14px, 24px, light, #ffffff);
 }
+
+.download__title {
+  display: none;
+}
+
+@media @tablets {
+  .download {
+    width: 320px;
+    margin-top: -590px;
+    margin-left: 30px;
+    background-color: transparent;
+  }
+  .download__title {
+    display: block;
+    .set-font(40px, 44px, light, #ffffff);
+  }
+
+}

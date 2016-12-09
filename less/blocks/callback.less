@@ -1,0 +1,74 @@
+.callback__wrapper {
+  .set-wrap();
+  position: relative;
+  &:after {
+    .triangle(down, 35px, 320px, @pages-bg);
+  }
+}
+
+.callback__text {
+  .set-font(24px, 32px, light, #283645);
+}
+
+.callback__title {
+  .set-font(18px, 24px, bold, #283645);
+}
+
+.callback__call,
+.callback__email,
+.callback__address {
+  display: block;
+  .set-font(18px, 24px, light, #d8456d);
+}
+
+.callback__address {
+  padding-bottom: 40px;
+}
+
+.callback__map {
+  height: 200px;
+  background: url("../../img/bg-map-mobile@1x.png") no-repeat;
+  background-size: cover;
+}
+
+.callback__items {
+  display: flex;
+  flex-direction: column;
+}
+
+@media @tablets {
+  .callback__wrapper {
+    .set-wrap(40px, 40px);
+  }
+  .callback__items {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .callback__item:nth-of-type(1){
+    margin-right: 100px;
+  }
+  .callback__item:last-of-type {
+    //flex-grow: 1;
+    width: 100%;
+  }
+  .callback__text {
+    .set-font(40px, 44px, light, #283645);
+  }
+  .callback__map {
+    height: 380px;
+  }
+}
+
+@media @desktops {
+  .callback__item:nth-of-type(2){
+    order: 1;
+  }
+  .callback__item:last-of-type {
+    width: auto;
+  }
+  .callback__map {
+    content: "YANDEX MAP";
+    height: 500px;
+  }
+}

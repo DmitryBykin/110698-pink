@@ -16,7 +16,7 @@
           </a>
           <a class="nav-btn  nav-btn--close"></a>
         </div>
-        <ul class="nav__items nav__items--hidden">
+        <ul class="nav__items">
           <li class="nav__item">
             <a class="nav__link" href="index.html">Главная</a>
           </li>
@@ -24,10 +24,10 @@
             <a class="nav__link" href="photo.html">Фотографии</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="competition.html">Конкурс</a>
+            <a class="nav__link" href="form.html">Конкурс</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="htmlacademy.ru">Html academy</a>
+            <a class="nav__link" href="htmlacademy.ru">HTML academy</a>
           </li>
         </ul>
       </nav>
@@ -45,7 +45,7 @@
       <ul class="photos__items">
         <img class="photos__img  photos--day-view" src="url" alt="Панорама дня">
         <div class="photos__wrapper">
-          <li class="photos__item">
+          <li class="photos__item  photos__item--day">
               <p class="photos__username">
                 Анна <span class="photos__time">(5 минут назад)</span>
               </p>
@@ -59,35 +59,104 @@
               </div>
           </li>
 
+          <div class="photos__flex-container">
 
-          <li class="photos__item">
-              <img class="photos__img" src="url" alt="фото">
-              <p class="photos__username">
-                Левон <span class="photos__time">(5 часов назад)</span>
-              </p>
-              <p class="photos__desc">
-                Вчера он на луну летал, сегодня в руки к нам попал
-              </p>
-              <div class="photos__likes">
-                <img class="photos__like-img" src="url" alt="likes">
-                <span class="photos__likes-text">Нравится: 356</span>
-              </div>
-          </li>
+            <li class="photos__item">
+                <img class="photos__img" src="url" alt="фото">
+                <p class="photos__username">
+                  Левон <span class="photos__time">(5 часов назад)</span>
+                </p>
+                <p class="photos__desc">
+                  Вчера он на луну летал, сегодня в руки к нам попал
+                </p>
+                <div class="photos__likes">
+                  <img class="photos__like-img" src="url" alt="likes">
+                  <span class="photos__likes-text">Нравится: 356</span>
+                </div>
+            </li>
 
-          <!-- здесь будут остальные записи -->
+            <li class="photos__item">
+                <img class="photos__img" src="url" alt="фото">
+                <p class="photos__username">
+                  Левон <span class="photos__time">(5 часов назад)</span>
+                </p>
+                <p class="photos__desc">
+                  Вчера он на луну летал, сегодня в руки к нам попал
+                </p>
+                <div class="photos__likes">
+                  <img class="photos__like-img" src="url" alt="likes">
+                  <span class="photos__likes-text">Нравится: 356</span>
+                </div>
+            </li>
+            <li class="photos__item">
+                <img class="photos__img" src="url" alt="фото">
+                <p class="photos__username">
+                  Левон <span class="photos__time">(5 часов назад)</span>
+                </p>
+                <p class="photos__desc">
+                  Вчера он на луну летал, сегодня в руки к нам попал
+                </p>
+                <div class="photos__likes">
+                  <img class="photos__like-img" src="url" alt="likes">
+                  <span class="photos__likes-text">Нравится: 356</span>
+                </div>
+            </li>
+
+            <li class="photos__item">
+                <img class="photos__img" src="url" alt="фото">
+                <p class="photos__username">
+                  Левон <span class="photos__time">(5 часов назад)</span>
+                </p>
+                <p class="photos__desc">
+                  Вчера он на луну летал, сегодня в руки к нам попал
+                </p>
+                <div class="photos__likes">
+                  <img class="photos__like-img" src="url" alt="likes">
+                  <span class="photos__likes-text">Нравится: 356</span>
+                </div>
+            </li>
+            <li class="photos__item">
+                <img class="photos__img" src="url" alt="фото">
+                <p class="photos__username">
+                  Левон <span class="photos__time">(5 часов назад)</span>
+                </p>
+                <p class="photos__desc">
+                  Вчера он на луну летал, сегодня в руки к нам попал
+                </p>
+                <div class="photos__likes">
+                  <img class="photos__like-img" src="url" alt="likes">
+                  <span class="photos__likes-text">Нравится: 356</span>
+                </div>
+            </li>
+
+            <li class="photos__item">
+                <img class="photos__img" src="url" alt="фото">
+                <p class="photos__username">
+                  Левон <span class="photos__time">(5 часов назад)</span>
+                </p>
+                <p class="photos__desc">
+                  Вчера он на луну летал, сегодня в руки к нам попал
+                </p>
+                <div class="photos__likes">
+                  <img class="photos__like-img" src="url" alt="likes">
+                  <span class="photos__likes-text">Нравится: 356</span>
+                </div>
+            </li>
+          </div> <!-- end photos__flex-container -->
+
         </div> <!-- end photos__wrapper -->
 
       </ul> <!-- end photos__items -->
     </section> <!-- end photos -->
 
     <section class="upload">
-      <h2 class="upload__title">Затмите их всех! Выкладывайте все, что накопилось
+      <h2 class="upload__title">Затмите их всех!<br> Выкладывайте все, что накопилось
         в телефоне!
       </h2>
       <!-- здесь,видимо, форма для загрузки фотографий -->
       <form class="upload__form" action="/script" method="post">
         <div class="upload__wrapper">
-          <img class="ipload__photo" src="url" alt="загруженное фото">
+          <img class="upload__photo" src="../img/photo-7-mobile@1x.jpg" alt="загруженное фото">
           <div class="upload__filters">
             <!-- как эти штуки (фильтры) сделать пока не знаю, надеюсь потом
             покажут как правильно сделать-->
@@ -108,9 +177,10 @@
             </ul>
             <!--  фильтры -->
             <input class="upload__range" type="range">
+
+            <input class="upload__btn  upload__btn--active" type="submit" value="Запостить">
+            <input class="upload__btn" type="reset" value="Отмена">
           </div> <!-- end upload__filters -->
-          <input class="upload__btn  upload__btn--active" type="submit" value="Запостить">
-          <input class="upload__btn" type="reset" value="Отмена">
         </div>
       </form>
     </section> <!-- end upload -->

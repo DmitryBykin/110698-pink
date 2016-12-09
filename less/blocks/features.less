@@ -1,15 +1,25 @@
 .features__wrapper {
   .set-wrap();
+  display: flex;
+  flex-direction: column;
+}
+
+.features__block {
+  position: relative;
+  z-index: 1;
 }
 .features__header {
-  position: relative;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  &:after {
+  /*position: relative;
+  z-index: 1;*/
+
+  /*padding-top: 50px;
+  padding-bottom: 50px;*/
+
+  /*&:after {
     @corner-width: calc(100%);
     .corner(topleft, 30px, 300px, @pages-bg);
     //.corner(topleft, 30px, @corner-width, @pages-bg); не работает пока не разобрался почему
-  }
+  }*/
 }
 
 .features__header-text {
@@ -18,9 +28,16 @@
 
 .features__main {
   position: relative;
-  //z-index: 0;
-  padding-top: 50px;
+  z-index: 0;
+
+  padding-top: 70px;
+
   background-color: #f2f2f2;
+
+  &:before {
+    @corner-width: calc(100%);
+    .corner(topleft, 30px, 320px, @pages-bg);
+  }
 }
 
 .features__main-title {
@@ -29,12 +46,142 @@
 .features__main-desc {
   .set-font(14px, 24px, normal, #283645);
 }
-
+.features__main-logoblock {
+  position: relative;
+  z-index: 1;
+}
 .features__main-logo {
+  width: 100%;
+  height: 320px;
+
   position: relative;
   //z-index: 0;
   display: block;
 
   padding-top: 20px;
   margin: 0 auto;
+  background: url("../../img/iphone-screen-mobile@1x.png") 50% 0 no-repeat;
+}
+
+@media @mobiles {
+  .features__main-logo:nth-child(n+2) {
+    display: none;
+  }
+}
+
+@media @tablets {
+  .features__wrapper {
+    .set-wrap(40px, 40px);
+    flex-direction: row-reverse;
+    justify-content: space-around;
+  }
+  .features__header {
+    margin-top: 200px;
+  }
+  .features__header-text {
+    .set-font(40px, 44px, light, #283645);
+  }
+  .features__header-wrapper {
+    .set-wrap(40px, 40px);
+  }
+  .features__main-logo {
+    height: 480px;
+    min-width: 265px;
+
+    background-size: cover;
+  }
+
+  .features__block {
+    padding-top: 75px;
+    margin-left: 50px;
+  }
+
+  .features__main-title,
+  .features__main-desc {
+    text-align: left;
+  }
+
+  .features__main {
+    padding-top: 0;
+
+    &:before {
+      @corner-width: calc(100%);
+      .corner(topleft, 55px, 700px, @pages-bg);
+      //.corner(topleft, 30px, @corner-width, @pages-bg); не работает пока не разобрался почему
+    }
+  }
+
+}
+
+@media @desktops {
+  .features__header {
+    margin-top: 200px;
+  }
+  .features__wrapper {
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+  }
+
+  .features__main-logo:nth-child(n+2) {
+    display: block;
+  }
+
+  .features__main-logoblock {
+    /*position: relative;
+    z-index: 1;*/
+
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    order: 1;
+
+    margin-top: -50px;
+  }
+
+  .features__main-logo {
+    /*position: relative;
+    z-index: 0;*/
+
+    width: 265px;
+    height: 300px;
+
+    background-size: auto;
+    background-position: 50% 50px;
+  }
+  .features__block {
+    width: 100%;
+
+    padding-top: 30px;
+
+    display: flex;
+    flex-direction: row;
+    order: 2;
+    justify-content: space-around;
+
+    margin-left: 0;
+  }
+
+  .features__main-title,
+  .features__main-desc {
+    text-align: center;
+  }
+
+  .features__item {
+    width: 265px;
+  }
+
+  .features__main {
+    padding-top: 0;
+    margin-top: 0;
+  }
+
+  .features__main {
+    &:before {
+      @corner-width: calc(100%);
+      .corner(topleft, 95px, 1200px, @pages-bg);
+      //.corner(topleft, 30px, @corner-width, @pages-bg); не работает пока не разобрался почему
+    }
+  }
+
 }

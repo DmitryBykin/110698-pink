@@ -16,7 +16,7 @@
           </a>
           <a class="nav-btn  nav-btn--close"></a>
         </div>
-        <ul class="nav__items nav__items--hidden">
+        <ul class="nav__items"> <!-- nav__items--hidden -->
           <li class="nav__item">
             <a class="nav__link" href="index.html">Главная</a>
           </li>
@@ -24,10 +24,10 @@
             <a class="nav__link" href="photo.html">Фотографии</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="competition.html">Конкурс</a>
+            <a class="nav__link" href="form.html">Конкурс</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link" href="htmlacademy.ru">Html academy</a>
+            <a class="nav__link" href="htmlacademy.ru">HTML academy</a>
           </li>
         </ul>
       </nav>
@@ -41,14 +41,22 @@
         <div class="form__wrapper">
           <p class="form__title">Поделитесь своей историей и получите шанс
           выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
-          <label class="form__text-item" for="surname">Фамилия:</label>
-          <input class="form__field-text" type="text" id="surname" placeholder="Укажите фамилию*">
 
-          <label class="form__text-item" for="name">Имя:</label>
-          <input class="form__field-text" type="text" id="name" placeholder="Введите ваше имя*">
+          <div class="form__flex-container">
+            <div class="form__flex-item">
+              <label class="form__text-item" for="surname">Фамилия:</label>
+              <input class="form__field-text" type="text" id="surname" placeholder="Укажите фамилию*">
+            </div>
+            <div class="form__flex-item">
+              <label class="form__text-item" for="name">Имя:</label>
+              <input class="form__field-text" type="text" id="name" placeholder="Введите ваше имя*">
+            </div>
+            <div class="form__flex-item">
+              <label class="form__text-item" for="last-name">Отчество:</label>
+              <input class="form__field-text" type="text" id="last-name" placeholder="Ну и отчество тоже">
+            </div>
+          </div>
 
-          <label class="form__text-item" for="last-name">Отчество:</label>
-          <input class="form__field-text" type="text" id="last-name" placeholder="Ну и отчество тоже">
         </div> <!-- end wrapper -->
       </div> <!-- end form__user -->
 
@@ -93,13 +101,16 @@
 
       <div class="form__feedback">
         <div class="form__wrapper">
-          <!-- все текстовые поля выглядят одинаково -->
-          <!-- поэтому тут тоже form__field-text -->
-          <label class="form__text-item" for="tel">Номер телефона:</label>
-          <input class="form__field-text" type="tel" id="tel" placeholder="Номер, пожалуйста">
-
-          <label class="form__text-item" for="email">Адрес почты:</label>
-          <input class="form__field-text" type="email" id="email" placeholder="Введите почту*">
+          <div class="form__feedback-flex">
+            <div class="form__feedback-flex-item">
+              <label class="form__text-item" for="tel">Номер телефона:</label>
+              <input class="form__field-text" type="tel" id="tel" placeholder="Номер, пожалуйста">
+            </div>
+            <div class="form__feedback-flex-item">
+              <label class="form__text-item" for="email">Адрес почты:</label>
+              <input class="form__field-text" type="email" id="email" placeholder="Введите почту*">
+            </div>
+          </div>
         </div>
       </div> <!-- end form__feedback -->
 
@@ -126,16 +137,18 @@
         </div> <!-- end form__wrapper -->
       </div> <!-- end form__radio -->
 
-      <div class="form__wrapper">
-        <p class="form__text-title">
-          Опишите свои эмоции
-        </p>
-        <textarea class="form__emotions" name="emotions" rows=6
-        placeholder="Можно прям в красках, не стесняясь в выражениях">
-        </textarea>
+      <div class="form__emotions-block">
+        <div class="form__wrapper">
+          <p class="form__text-title">
+            Опишите свои эмоции
+          </p>
+          <textarea class="form__emotions" name="emotions" rows=6
+          placeholder="Можно прям в красках, не стесняясь в выражениях">
+          </textarea>
 
-        <input class="form__submit" type="submit" value="Отправить форму">
-        <p class="form__required"><span>*</span> - Обязательные поля</p>
+          <input class="form__submit" type="submit" value="Отправить форму">
+          <p class="form__required"><span>*</span> - Обязательные поля</p>
+        </div>
       </div>
 
     </form>
