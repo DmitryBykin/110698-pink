@@ -26,3 +26,22 @@
   .set-font(12px, 24px, normal, @upload-btn, left);
   text-transform: uppercase;
 }
+
+@media @tablets {
+  .photos__wrapper {
+   .set-wrap(40px, 40px);
+  }
+  .photos__flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .photos__item {
+    width: 300px;
+  }
+  .photos__item--day {
+    width: 100%;
+  }
+
+}

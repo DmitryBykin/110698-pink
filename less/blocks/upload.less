@@ -11,6 +11,11 @@
   .set-wrap();
   text-align: center;
 }
+.upload__photo {
+  width: 280px;
+  height: 375px;
+  border: 1px solid red;
+}
 .upload__btn {
   display: block;
   width: 250px;
@@ -30,4 +35,21 @@
   color: @upload-btn;
   border-color: @upload-btn;
   opacity: 1;
+}
+
+@media @tablets {
+  .upload__wrapper {
+    .set-wrap(40px, 40px);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .upload__filters {
+    margin-left: 40px;
+  }
+  .upload__photo {
+    width: 300px;
+    height: 400px;
+    border: 1px solid red;
+  }
 }

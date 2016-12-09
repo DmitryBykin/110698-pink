@@ -1,6 +1,7 @@
 .nav {
   border-bottom: 1px solid @inner-shadow; // тень
-  background-color: @menu-bg;
+  //background-color: @menu-bg;
+  //background-color: @menu-closed-bg;
 
   display: flex;
   flex-direction: column;
@@ -9,11 +10,18 @@
 .nav__menu {
   height: 67px;
   border-bottom: 1px solid @drop-shadow; // тень
+
+  background-color: @menu-bg;
+}
+
+.nav__menu--closed {
+  background-color: @menu-closed-bg;
 }
 
 .nav__items {
   display: flex;
   flex-direction: column;
+  background-color: @menu-bg;
 }
 
 .nav__item {
@@ -25,9 +33,10 @@
   display: block;
 
   .set-font(@link-font-size, @link-line-height, bold, @link-color);
+  text-transform: uppercase;
 
-  padding-top: 22px;
-  padding-bottom: 22px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 
   &:active {
     color: @link-active-color;
@@ -42,16 +51,26 @@
 @media @desktops {
   .nav__menu {
     width: 160px;
+    background-color: @menu-closed-bg;
   }
   .nav {
     flex-direction: row;
 
-    border: 1px solid red;
+    border-bottom: none;
+  }
+  .nav__item {
+    border-top: none;
+    border-bottom: none;
   }
   .nav,
   .nav__items {
     flex-direction: row;
     justify-content: space-around;
     flex-grow: 1;
+
+    background-color: @menu-closed-bg;
+  }
+  .nav__link {
+    text-transform: capitalize;
   }
 }

@@ -1,9 +1,10 @@
 .header {
-  min-height: 720px; // 460px когда меню закрыто
+  //min-height: 720px; // 460px когда меню закрыто
   background-color: @header-bg;
   background:
     url("../../img/bg-back-mobile@1x.jpg") 50% 100% no-repeat,
     url("../../img/iphone-hand-mobile@1x.png") 50% 100% no-repeat; // это изображение пока не показывается
+  padding-bottom: 390px;
 }
 .header__desc {
   .set-wrap();
@@ -12,13 +13,34 @@
 }
 .header--form,
 .header--photo {             // для form.html и photo.html высота header 235px
-  height: 235px;             // и только одна фоновая фотография
-  background: url("../../img/bg-back-mobile@1x.jpg") 50% 0% no-repeat;
+  //min-height: 235px;             // и только одна фоновая фотография
+  background: url("../../img/bg-back-mobile@1x.jpg") 50% 100% no-repeat;
+  padding-bottom: 55px;
 }
 
 @media @tablets {
   .header {
-    min-height: 980px; // меню постоянно открыто
+    //min-height: 980px; // меню постоянно открыто
+    padding-bottom: 620px;
     background-size: cover;
+  }
+  .header--form,
+  .header--photo {
+    padding-bottom: 0;
+  }
+
+  .header--form .header__desc {
+    .set-wrap(150px, 150px);
+    .set-font(42px, 46px, light);
+
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+  .header--photo .header__desc {
+    .set-wrap(150px, 150px);
+    .set-font(42px, 46px, light);
+
+    padding-top: 75px;
+    padding-bottom: 75px;
   }
 }
