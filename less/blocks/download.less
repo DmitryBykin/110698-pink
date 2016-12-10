@@ -6,25 +6,41 @@
 
   background-color: @header-bg;
 }
-
+.download__wrapper {
+  .set-wrap(20px, 20px);
+}
 .download__btn {
   display: block;
-  width: 250px;
+  max-width: 205px;
 
   .set-font(@btn-font-size, @btn-line-height, bold, @btn-color);
 
-  padding: 15px 20px;
+  padding: 15px 40px;
   margin: 0 auto;
 
   border: 3px solid @btn-color;
   border-radius: 30px;
 }
 .download__desc {
+  margin-top: 20px;
+
   .set-font(14px, 24px, light, #ffffff);
 }
 
 .download__title {
   display: none;
+}
+
+.download__icon {
+  margin-right: 35px;
+}
+.download__icons {
+  margin-top: 30px;
+
+  text-align: center;
+}
+.download__icon:last-of-type {
+  margin-right: 0;
 }
 
 @media @tablets {
