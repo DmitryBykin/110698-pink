@@ -8,7 +8,7 @@
 }
 
 .nav__menu {
-  height: 67px;
+  min-height: 67px;
   border-bottom: 1px solid @drop-shadow; // тень
 
   background-color: @menu-bg;
@@ -51,25 +51,31 @@
 @media @desktops {
   .nav__menu {
     width: 160px;
-    background-color: @menu-closed-bg;
-  }
-  .nav {
-    flex-direction: row;
-
+    background-color: transparent;
     border-bottom: none;
   }
+
   .nav__item {
     border-top: none;
     border-bottom: none;
   }
+
   .nav,
   .nav__items {
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
     flex-grow: 1;
 
+    background-color: transparent;
+  }
+
+  .nav {
+    min-height: 110px;
+    border-bottom: none;
     background-color: @menu-closed-bg;
   }
+
   .nav__link {
     text-transform: capitalize;
   }

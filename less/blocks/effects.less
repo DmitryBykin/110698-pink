@@ -18,19 +18,39 @@
 
     display: block;
   }
+
   .effects__wrapper {
     display: flex;
+    outline: 1px solid green;
   }
+
   .effects__logo {
     width: 50%;
   }
+
   .effects__content {
     width: 50%;
+  }
+
+  .effects__title {
+    .set-font(30px, 34px, bold, #000000, left);
+  }
+
+  .effects__desc {
+    .set-font(14px, 18px, normal, #28365, left);
+    margin-bottom: 20px;
+  }
+
+  .effects__learn-more {
+    .set-font(14px, 18px, normal, #d22856, left);
+    text-decoration: underline;
   }
 }
 
 @media @desktops {
   .effects {
+    .set-wrap(150px, 150px);
     margin-top: 0;
+    background-color: #f2f2f2;
   }
 }

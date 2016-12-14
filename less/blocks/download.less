@@ -11,11 +11,11 @@
 }
 .download__btn {
   display: block;
-  max-width: 205px;
+  max-width: 250px;
 
   .set-font(@btn-font-size, @btn-line-height, bold, @btn-color);
 
-  padding: 15px 40px;
+  padding: 15px 30px;
   margin: 0 auto;
 
   border: 3px solid @btn-color;
@@ -46,13 +46,37 @@
 @media @tablets {
   .download {
     width: 320px;
-    margin-top: -590px;
+    margin-top: -560px;
     margin-left: 30px;
     background-color: transparent;
   }
   .download__title {
     display: block;
-    .set-font(40px, 44px, light, #ffffff);
+    margin-bottom: 35px;
+    .set-font(40px, 48px, light, #ffffff);
+  }
+  .download__icons {
+    margin-top: 40px;
+  }
+  .download__desc {
+    margin-top: 40px;
+  }
+}
+
+@media @desktops {
+  .download {
+    margin-top: -663px;
   }
 
+  .download__title {
+    .set-font(50px, 60px, normal, #ffffff, center);
+    margin-bottom: 50px;
+  }
+
+  .download__icons {
+    margin-top: 65px;
+  }
+  .download__desc {
+    margin-top: 60px;
+  }
 }
